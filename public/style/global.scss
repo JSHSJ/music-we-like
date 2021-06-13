@@ -1,0 +1,20 @@
+// CONFIG WITH ALL BASE VALUES FIRST
+@use "./_partials/config/config";
+
+// LOAD IMPORTANT MIXINS
+@use "./_partials/mixins/motion-ok" as *;
+@use "./_partials/mixins/darkmode" as *;
+
+// LOAD ALL ROOT STYLE AND COLORS
+@use "./_partials/theme";
+@use "./_partials/typography";
+@use "./_partials/base";
+@use "./_partials/layout";
+
+// LOAD UTILITIES
+@use "./_partials/utilities/colors";
+@use "./_partials/utilities/spacings";
+
+// LOAD COMPONENTS
+@use "./_partials/components/button";
+

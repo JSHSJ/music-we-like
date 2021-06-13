@@ -1,0 +1,6 @@
+// Mini Mixin to handle everything motion related
+@mixin motion-ok {
+  @media (prefers-reduced-motion: no-preference) {
+      @content;
+  }
+}

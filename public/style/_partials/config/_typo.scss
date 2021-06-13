@@ -1,0 +1,10 @@
+
+:root {
+
+  --measure: 64ch;
+  --fontFamily: 'Iosevka Aile', system-ui, sans-serif;
+  --fontWeightRegular: 400;
+  --fontWeightBold: 600;
+  --lineHeight: var(--ratio);
+  --lineHeight-small: calc(0.8*var(--ratio));
+}

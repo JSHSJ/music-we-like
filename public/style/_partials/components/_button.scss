@@ -1,0 +1,43 @@
+button, .CTA-button {
+  padding: var(--s-1);
+  background: var(--text1);
+  color: var(--surface2);
+  border-width: var(--border-thin);
+  border-color: var(--text1);
+  border-style: solid;
+  padding-inline: var(--s2);
+  height: 3em;
+
+  font-family: var(--fontFamily);
+  font-weight: var(--fontWeightBold);
+  font-size: var(--s0);
+  cursor: pointer;
+  display: inline-flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-items: center;
+  width: max-content;
+  position: relative;
+
+
+  &:hover {
+
+    background: var(--text2);
+    color: var(--surface1);
+    border-color: var(--text1);
+    outline: 1px solid var(--text2);
+    outline-offset: 0px;
+  }
+
+  &.-secondary {
+    background: var(--surface3);
+    color: var(--text1);
+  }
+
+  &.-secondary:hover {
+    background: var(--surface1);
+    color: var(--text1);
+    border-color: var(--text1);
+    outline: 1px solid var(--text2);
+  }
+}

@@ -1,0 +1,30 @@
+// Some color utility classes
+
+
+.bg-surface1 { background-color: var(--surface1);}
+.bg-surface2 { background-color: var(--surface2);}
+.bg-surface3 { background-color: var(--surface3);}
+.bg-surface4 { background-color: var(--surface4);}
+
+.c-brand{color: var(--brand)};
+.c-brand2{color: var(--brand)};
+.c-text1 {color: var(--text1);}
+.c-text2 {color: var(--text2);}
+
+.c-brand-l{color: var(--brand-light)};
+.c-text1-l {color: var(--text1-light);}
+.c-text2-l {color: var(--text2-light);}
+
+.c-brand-d{color: var(--brand-dark)};
+.c-text1-d {color: var(--text1-dark);}
+.c-text2-d {color: var(--text2-dark);}
+
+.bg-surface1-l { background-color: var(--surface1-light);}
+.bg-surface2-l { background-color: var(--surface2-light);}
+.bg-surface3-l { background-color: var(--surface3-light);}
+.bg-surface4-l { background-color: var(--surface4-light);}
+
+.bg-surface1-d { background-color: var(--surface1-dark);}
+.bg-surface2-d { background-color: var(--surface2-dark);}
+.bg-surface3-d { background-color: var(--surface3-dark);}
+.bg-surface4-d { background-color: var(--surface4-dark);}

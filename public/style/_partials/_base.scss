@@ -1,0 +1,113 @@
+// DEFAULT ELEMENT STYLES // RESET
+@use "mixins/motion-ok" as *;
+
+p,h1,h2,h3,h4,h5,h6,ul,ol,dl,figure,blockquote {
+  margin-block: 0;
+}
+
+:focus-visible, :focus {
+  outline: var(--s-5) solid var(--brand);
+  outline-offset: .64ch;
+}
+
+:focus:not(:focus-visible) { outline: none; }
+
+
+
+html {
+  block-size: 100%;
+  inline-size: 100%;
+
+  @include motion-ok {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  min-block-size: 100%;
+  min-inline-size: 100%;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+@media (orientation: landscape) {
+  body {
+    grid-auto-flow: column;
+  }
+}
+
+img, picture {
+  max-width: 100%;
+  display: block;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p,li,dd,dt,summary {
+  max-inline-size: var(--measure);
+  font-size: var(--s0);
+  font-weight: var(--fontWeightRegular);
+  line-height: var(--lineHeight);
+}
+
+
+
+ol,ul,dl {
+  display: grid;
+  gap: var(--s0);
+  max-inline-size: max-content;
+  padding-inline: 0;
+  /* padding-block: var(--s0); */
+  --gap: var(--s2);
+}
+
+li, dd {
+  max-inline-size: calc(var(--measure) * 0.8);
+  font-size: var(--s0);
+  margin-inline: var(--s0);
+}
+
+dt {
+  font-weight: bolder;
+
+  &:not(:first-of-type) {
+    margin-top: var(--s0);
+  }
+}
+
+img {
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+small {
+  font-size: var(--s-1);
+}
+
+sup, small, figcaption {
+  color: var(--text2);
+}
+
+details {
+  width: 100%;
+  background-color: var(--surface3);
+  padding-inline: var(--defaultPadding-horizontal);
+  padding-block: var(--defaultPadding-vertical);
+  border-radius: 0;
+
+  & > *:not(summary):first-of-type {
+    margin-block-start: var(--s0);
+  }
+
+  & > summary {
+    cursor: pointer;
+    color: var(--text1);
+    width: 100%;
+  }
+
+  &[open=""] {
+    border: var(--border-thin) solid var(--surface-4);
+  }
+}

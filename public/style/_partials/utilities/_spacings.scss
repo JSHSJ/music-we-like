@@ -1,0 +1,64 @@
+// ----------
+//  (M)argin
+// ----------
+@for $i from 1 to 5 {
+  .m--#{$i} { margin: var(--s-#{$i}); }
+  .my--#{$i} { margin-top: var(--s-#{$i}); margin-bottom: var(--s-#{$i}); }
+  .mx--#{$i} { margin-right: var(--s-#{$i}); margin-left: var(--s-#{$i}); }
+  .mt--#{$i} { margin-top: var(--s-#{$i}); }
+  .mr--#{$i} { margin-right: var(--s-#{$i}); }
+  .mb--#{$i} { margin-bottom: var(--s-#{$i}); }
+  .ml--#{$i} { margin-left: var(--s-#{$i}); }
+}
+
+@for $i from 0 to 5 {
+  .m-#{$i} { margin: var(--s#{$i}); }
+  .my-#{$i} { margin-top: var(--s#{$i}); margin-bottom: var(--s#{$i}); }
+  .mx-#{$i} { margin-right: var(--s#{$i}); margin-left: var(--s#{$i}); }
+  .mt-#{$i} { margin-top: var(--s#{$i}); }
+  .mr-#{$i} { margin-right: var(--s#{$i}); }
+  .mb-#{$i} { margin-bottom: var(--s#{$i}); }
+  .ml-#{$i} { margin-left: var(--s#{$i}); }
+}
+
+
+.ma-auto { margin: auto }
+.my-auto { margin-top: auto; margin-bottom: auto; }
+.mx-auto { margin-left: auto; margin-right: auto; }
+.mt-auto { margin-top: auto; }
+.mr-auto { margin-right: auto; }
+.mb-auto { margin-bottom: auto; }
+.ml-auto { margin-left: auto; }
+
+.m-0 { margin: 0 }
+.my-0 { margin-top: 0; margin-bottom: 0; }
+.mx-0 { margin-left: 0; margin-right: 0; }
+.mt-0 { margin-top: 0; }
+.mr-0 { margin-right: 0; }
+.mb-0 { margin-bottom: 0; }
+.ml-0 { margin-left: 0; }
+
+
+// ----------
+//  (P)adding
+// ----------
+
+@for $i from 1 to 5{
+  .p--#{$i} { padding: var(--s-#{$i}); }
+  .py--#{$i} { padding-top: var(--s-#{$i}); padding-bottom: var(--s-#{$i}); }
+  .px--#{$i} { padding-right: var(--s-#{$i}); padding-left: var(--s-#{$i}); }
+  .pt--#{$i} { padding-top: var(--s-#{$i}); }
+  .pr--#{$i} { padding-right: var(--s-#{$i}); }
+  .pb--#{$i} { padding-bottom: var(--s-#{$i}); }
+  .pl--#{$i} { padding-left: var(--s-#{$i}); }
+}
+
+@for $i from 0 to 5{
+  .p-#{$i} { padding: var(--s#{$i}); }
+  .py-#{$i} { padding-top: var(--s#{$i}); padding-bottom: var(--s#{$i}); }
+  .px-#{$i} { padding-right: var(--s#{$i}); padding-left: var(--s#{$i}); }
+  .pt-#{$i} { padding-top: var(--s#{$i}); }
+  .pr-#{$i} { padding-right: var(--s#{$i}); }
+  .pb-#{$i} { padding-bottom: var(--s#{$i}); }
+  .pl-#{$i} { padding-left: var(--s#{$i}); }
+}

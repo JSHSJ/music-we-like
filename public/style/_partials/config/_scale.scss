@@ -1,0 +1,14 @@
+// This is the base for all things that use scale
+// FONTSIZES, SPACINGS, ...
+@use "sass:math";
+
+:root {
+  --ratio: 1.48;
+  --base: 1rem;
+
+  @for $i from 1 through 5 {
+    --s-#{$i}: #{math.div(1, math.pow(1.48, $i))}rem;
+    --s#{$i}: #{math.pow(1.48, $i)}rem;
+  }
+  --s0: 1rem;
+}
